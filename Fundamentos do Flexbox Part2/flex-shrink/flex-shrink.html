@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos flex shrink</title>
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+
+        .item{
+            margin: 5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+
+        .s-1{
+           flex-shrink: 1;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .s-0{
+           flex-shrink: 0;
+           flex-basis: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <p>flex-shrink 1</p>
+    <div class="flex-container">
+        <div class="item fg-1 s-1">A</div>
+        <div class="item fg-1 s-1">B</div>
+        <div class="item fg-1 s-1">C</div>
+        <div class="item fg-1 s-1">D</div>
+        <div class="item fg-1 s-1">E</div>
+    </div>
+
+
+
+    <p>flex-shrink 2</p>
+    <div class="flex-container">
+        <div class="item fg-1 s-1">A</div>
+        <div class="The generated ">B</div>
+        <div class="item fg-1 s-1">C</div>
+        <div class="item fg-1 s-1">D</div>
+    </div>
+
+    <p>flex-shrink 0 / basis: 100px</p>
+    <div class="flex-container">
+        <div class="item fg-1 s-0">A</div>
+        <div class="item fg-1 s-0">The generated</div>
+        <div class="item fg-1 s-0">C generated</div>
+        <div class="item fg-1 s-0">D</div>
+    </div>
+</body>
+</html>

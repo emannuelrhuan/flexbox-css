@@ -1,0 +1,2 @@
+É a propriedade que estabelecer a capacidade de redução ou compressão do tamanho de um item.
+
