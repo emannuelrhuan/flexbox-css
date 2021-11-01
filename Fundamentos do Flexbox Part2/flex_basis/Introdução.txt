@@ -1,0 +1,9 @@
+É a propriedade de estabalece o tamanho inicial do item antes das distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+
+Valores possíveis:
+
+*auto: caso o item nao tenha tamanho, este será proporcional ao conteúdo do item.
+
+* px, %, em,...: são valores exatos previamente definidos 
+
+* 0(zero): terá relação com a definição do flex-grow
