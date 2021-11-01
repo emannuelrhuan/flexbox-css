@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundametos - Justify Content</title>
+
+    <style>
+         .container{
+            max-width: 400px;
+           border: 2px solid black;
+           margin: 0;
+           display: flex;
+         }
+
+         .item{
+             background-color: blueviolet;
+             margin: 5px;
+             text-align: center;
+             color: white;
+         }
+
+         #mark{
+             background-color: greenyellow;
+         }
+
+         .flex-start{
+             justify-content: flex-start;
+         }
+
+         .flex-end{
+             justify-content: flex-end;
+         }
+
+         .center{
+             justify-content: center;
+         }
+
+         .space-between{
+             justify-content: space-between;
+         }
+
+         .space-around{
+             justify-content: space-around;
+         }
+    </style>
+</head>
+<body>
+
+    <h1><mark>flex-start</mark></h1>
+     <section class="container flex-start">
+         <div class="item">item 1</div>
+         <div class="item">item 2</div>
+         <div class="item">item 3</div>
+     </section>
+     <p>*<mark id="mark">Não muda nada, pq os elementos ja estão alinhados.</mark></p><br><br>
+
+
+     <h1><mark>flex-end</mark></h1>
+     <section class="container flex-end">
+        <div class="item">item 1</div>
+         <div class="item">item 2</div>
+         <div class="item">item 3</div>
+         <div class="item">item 4</div>
+     </section>
+     <p>*<mark id="mark">aqui vemos o alinhamento continuar o mesmo, porem o ultimo elemento se ver colado na direita, iniciando da direita para esquerda.</mark></p><br><br>
+
+
+     <h1><mark>center</mark></h1>
+     <section class="container center">
+        <div class="item">item 1</div>
+         <div class="item">item 2</div>
+         <div class="item">item 3</div>
+         <div class="item">item 4</div>
+     </section>
+     <p>*<mark id="mark">aqui vemos o alinhamento continuar o mesmo, porem os elementos se mantém centralizados ao meio do container.</mark></p><br><br>
+
+     
+     <h1><mark>space-between</mark></h1>
+     <section class="container space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+         <div class="item">item 3</div>
+         <div class="item">item 4</div>
+         <div class="item">item 5</div>
+         <div class="item">item 6 </div>
+         
+     </section>
+     <p>*<mark id="mark">aqui vemos o alinhamento continuar o mesmo, porem os elementos tem um espaçamento entre eles, mas os dois da ponta se mantem colados ao container.</mark></p><br><br>
+
+
+     <h1><mark>space-around</mark></h1>
+     <section class="container space-around">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+     
+     </section>
+     <p>*<mark id="mark">aqui vemos o alinhamento continuar o mesmo, porem os elementos tem um espaçamento entre eles maior que o espaçamento final e inicial.</mark></p><br><br>
+
+     
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Wrap</title>
+
+    <style>
+        .flex-container{
+            display:flex;
+            height: 100px;
+            border: 2px solid black;
+            max-width: 200px;/*maximo de largura do container*/
+            flex-direction: column;/*usado para inversão de todos os wrape*/
+         
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width:100px;/*se respeita a largura minima*/
+            line-height: 60px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .red{
+            background-color: rgb(255, 0, 0);
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .wrap{ /*classe usada para quebra de linha*/
+            flex-wrap: wrap; /*serve para a quebra de linha*/
+        }
+
+        .wrap-reverser{
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Funcionamento Padrão nowrap-->
+    
+    <h1>no wrap</h1>
+      <!--Neste exemplo vemos o vazamento do container sem a solução-->
+    <div class="flex-container nowrap">
+        <div class="item blue">1</div>
+        <div class="item orange">2</div>
+        <div class="item red">3</div>
+        <div class="item blue">4</div>
+        
+    </div></br></br></br></br>
+
+
+
+
+    <h1></br>WRAP</h1>
+    <!-- Aqui vemos o wrap funcionando dentro de um container -->
+    <div class="flex-container wrap">
+        <div class="item blue">1</div>
+        <div class="item orange">2</div>
+        <div class="item red">3</div>
+        <div class="item blue">1</div>
+        
+    </div></br></br>
+
+
+    <h1></br>WRAP REVERSE</h1>
+    <!-- Aqui vemos o wrap funcionando dentro de um container -->
+    <div class="flex-container wrap-reverser">
+        <div class="item blue">1</div>
+        <div class="item orange">2</div>
+        <div class="item red">3</div>
+        <div class="item blue">1</div>
+        
+    </div>
+    
+</body>
+</html>

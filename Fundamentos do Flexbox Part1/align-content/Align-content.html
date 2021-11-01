@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Streatch</h1>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p>Aqui não se acontece nada porque a função stretch ja vem como função padrão</p><br><br><br>
+
+
+
+    <h1>Center</h1>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p>aqui temos a redução dos itens e ficando de um tamanho padrão, colocando um padrao nas margens</p><br><br><br>
+
+    <h1>flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p>temos o alinhamento a partir da parte de cima do container</p><br><br><br>
+
+
+    h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p>temos o alinhamento a partir da parte de baixo do container</p><br><br><br>
+
+
+    h1>space-between</h1>
+    <div class="container space-between">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p>espaçamento igual a todos os elementos</p><br><br><br>
+
+
+    h1>space-around</h1>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">injected humour, or non-chacarteristic</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour, or non-chacarteristic</div> 
+        <div class="item">non-chacarteristic</div>
+        <div class="item">humour</div> 
+        <div class="item">therefore always free from always</div>  
+    </div><p> o espaçamento entre os elementos do meio são duas vezes maiores do que inicial e final</p><br><br><br>
+</body>
+</html>

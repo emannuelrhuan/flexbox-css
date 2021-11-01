@@ -1,0 +1,11 @@
+É  a propriedade que define se os intens devem ou não quebrar a linha.
+
+por padrão eles não quebram linhas, isso faz com que os flex intens sejam compactados além do limite do conteúdo.
+
+veremos o exemplo de quando os conteudos vazam do conteudo e se chamam de "nowrap".
+
+* nowrap: é o padrão, não permite a quebra de linha.
+
+* wrap: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado.
+
+*wrap-reverse: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, pórem na direção contrária da linha, acima. (se mantém na linha inicial e apos o limite o próximo item é jogado pra linha de cima da esquerda pra direita.

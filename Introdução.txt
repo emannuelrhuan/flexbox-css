@@ -1,0 +1,66 @@
+Objetivo da Introdução
+
+Apresentar os Fundamentos e aplicações da propriedade flexbox na criação da layouts responsivos, sem a necessidade a definição de valores fixos.
+
+
+Percurso das aulas:
+
+1 -  Introdução ao Flexbox
+2 - Fundamentos  do Flexbox 
+3 - Projeto Integrador
+
+
+
+Proposta do Projeto Final:
+
+- Construção de uma pagina com Flexbox
+- enriquecer o portifolio pessoal com o novo Conhecimento
+- Fixação de tudo oque foi ensinado durante o curso
+
+
+Introdução do Flexbox:
+
+1 - Conhecer a estrutura básica 
+2 - Enteder a diferença entre Flex Container e Flex Item
+3 - Conhecer inicialmente alguma propriedades  
+
+
+
+Flex Container:
+
+É a tag que envolve os itens, será nela que iremos aplicar a propriedades "display:flex". Transforma tofos os seus filhos em flex itens.
+
+
+Propriedades relacionadas: 
+
+* display   -  Inicializador do Container 
+                                              
+* justify-content -  Faz o alinhamento dos elementos dentro do Container de acordo com sua direção
+
+* flex-direction -     Faz o direcionamento dos elementos  
+                                              
+* align-items -  Faz o alinhamento dos elementos dentro do Container de acordo com seu Eixo 
+
+* flex-wrap -   Utilizado para quebra de linhas ou não 
+                                                
+* align-content - Faz o alinhamento das linhas do Container
+
+* flex-flow -  Uma abreviação para direction e wrap
+ 
+
+FLEX ITEM:
+
+São os elementos filhos diretos do Flex Container. E também podem se tornar Flex Container
+
+
+*flex-grow - Defini o Fator de Crescimento
+
+*flex-basis - Defini o tamanho inicial do item antes da distribuição do espaço restante dentro do container 
+
+*flex-shrink - defini a capacidade de redução
+
+*flex - abreviação para as 3 propriedades acima (grow, basis e shrink)
+
+*order  - defini a ordem de distribuição e listagem dos itens 
+
+*align-self - faz o alinhamento específico de um item dentro daquele  container.

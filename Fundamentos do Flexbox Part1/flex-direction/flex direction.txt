@@ -1,0 +1,25 @@
+É a propriedade quee estabelexe o eixo Principal do container, definido assim a direção que os flex items são colocados no flex container.
+
+* row (padrão): é a direção padrão que se inicia, sendo a direção de texto, esquerda para direita.
+EX:     
+         1  --> 2 --> 3 --> 4
+
+
+
+* row-reverse: sentido oposto à direção do texto, direita para esquerda.
+EX:
+         4 <-- 3 <-- 2 <-- 1
+
+
+
+*column: ordena na vertical como uma coluna, de cima para baixo, em coluna unica.
+EX:        1
+              2     
+              3
+              4
+
+column-reverse: ordenação inversa, de baixo para cima.
+EX:        4   
+              3   
+              2   
+              1
